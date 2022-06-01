@@ -1,8 +1,8 @@
 package day09;
 /*
  Map
- - Å°¿Í °ªÀ¸·Î ÇÏ³ªÀÇ ½ÖÀ¸·Î ÀÌ·ç¾îÁ® ÀÖ´Ù.
- - ¼ø¼­´Â À¯ÁöµÇÁö ¾ÊÀ¸¸ç, Å°ÀÇ Áßº¹ÀºÇã¿ëÇÏÁö ¾Ê´Â´Ù.
+ - í‚¤ì™€ ê°’ìœ¼ë¡œ í•˜ë‚˜ì˜ ìŒìœ¼ë¡œ ì´ë£¨ì–´ì ¸ ìˆë‹¤.
+ - ìˆœì„œëŠ” ìœ ì§€ë˜ì§€ ì•Šìœ¼ë©°, í‚¤ì˜ ì¤‘ë³µì€í—ˆìš©í•˜ì§€ ì•ŠëŠ”ë‹¤.
  */
 
 import java.util.HashMap;
@@ -13,20 +13,20 @@ public class Ex02 {
 
 	public static void main(String[] args) {
 		HashMap map = new HashMap();
-		map.put("¼±Ç³±â", "100¸¸¿ø");
-		map.put("¿¡¾îÄÁ", "50¸¸¿ø");
-		map.put("ÀÚµ¿Â÷", "10¸¸¿ø");
+		map.put("ì„ í’ê¸°", "100ë§Œì›");
+		map.put("ì—ì–´ì»¨", "50ë§Œì›");
+		map.put("ìë™ì°¨", "10ë§Œì›");
 		
-		map.put("¼±Ç³±â", "1000¸¸¿ø"); 
+		map.put("ì„ í’ê¸°", "1000ë§Œì›"); 
 		System.out.println(map);
-		System.out.println(map.get("¼±Ç³±â"));
-		System.out.println(map.get("ÀÚµ¿Â÷"));
-		System.out.println(map.get("¾ø´Â°ª"));
+		System.out.println(map.get("ì„ í’ê¸°"));
+		System.out.println(map.get("ìë™ì°¨"));
+		System.out.println(map.get("ì—†ëŠ”ê°’"));
 		
-		System.out.println(map.containsKey("ÀÚµ¿Â÷"));
-		System.out.println(map.containsKey("¤±¤±¤±"));
+		System.out.println(map.containsKey("ìë™ì°¨"));
+		System.out.println(map.containsKey("ã…ã…ã…"));
 
-		map.remove("¼±Ç³±â");
+		map.remove("ì„ í’ê¸°");
 		System.out.println(map);
 		
 		System.out.println(map.keySet());
@@ -34,20 +34,20 @@ public class Ex02 {
 		//Set set = map.keySet();
 		//Iterator it = set.iterator();
 		Iterator it = map.keySet().iterator();
-		//it = [bof, ÀÚµ¿Â÷, ¼±Ç³±â, eof]
-		//map = {ÀÚµ¿Â÷:10¸¸¿ø, ¼±Ç³±â:100¸¸¿ø}
+		//it = [bof, ìë™ì°¨, ì„ í’ê¸°, eof]
+		//map = {ìë™ì°¨:10ë§Œì›, ì„ í’ê¸°:100ë§Œì›}
 		while(it.hasNext()) {
 			String s = (String)it.next();
 			System.out.println(s+" : "+map.get(s));
 		}
 		
-		String k = "¿ì¸®Áı", v ="Á¾·Î 3°¡";
+		String k = "ìš°ë¦¬ì§‘", v ="ì¢…ë¡œ 3ê°€";
 		map.put(k, v);
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Ã£À» °ª ÀÔ·Â");
+		System.out.println("ì°¾ì„ ê°’ ì…ë ¥");
 		String search = sc.next();
 		if(map.get(search) == null) {
-			System.out.println("Á¸ÀçÇÏÁö ¾Ê´Â ÁÖ¼Ò");
+			System.out.println("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì£¼ì†Œ");
 		}else {
 			System.out.println(
 					search + " : " +map.get(search));

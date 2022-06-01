@@ -3,8 +3,8 @@ package day09;
 public class MainClass02 {
 public static void main(String[] args) {
 	TestClass02 t01 = new TestClass02();
-	System.out.println("main ½ÃÀÛ");
+	System.out.println("main ì‹œì‘");
 	t01.test();
-	System.out.println("main Á¾·á");
+	System.out.println("main ì¢…ë£Œ");
 }
 }

@@ -8,23 +8,23 @@ import java.util.Scanner;
 public class Ex01 {
 /*
   set
-  - ¼ø¼­¸¦ À¯ÁöÇÏÁö ¾Ê´Â´Ù
-  - Áßº¹µÈ °ªÀº Çã¿ëÇÏÁö ¾ÊÀ½
+  - ìˆœì„œë¥¼ ìœ ì§€í•˜ì§€ ì•ŠëŠ”ë‹¤
+  - ì¤‘ë³µëœ ê°’ì€ í—ˆìš©í•˜ì§€ ì•ŠìŒ
  */
 	public static void main(String[] args) {
 		ArrayList arr = new ArrayList();
-		arr.add("È«±æµ¿"); arr.add("È«±æµ¿"); //ArrayList ´Â Áßº¹À» Çã¿ëÇÔ
+		arr.add("í™ê¸¸ë™"); arr.add("í™ê¸¸ë™"); //ArrayList ëŠ” ì¤‘ë³µì„ í—ˆìš©í•¨
 		System.out.println("arr : "+ arr);
 		
 		HashSet hs = new HashSet();
-		hs.add("È«±æµ¿"); hs.add("±è°³¶Ë"); // SetÀº Áßº¹À» Çã¿ëÇÏÁö ¾ÊÀ½
-		hs.add("È«±æµ¿");
-		System.out.println(hs.remove("È«±æµ¿"));
+		hs.add("í™ê¸¸ë™"); hs.add("ê¹€ê°œë˜¥"); // Setì€ ì¤‘ë³µì„ í—ˆìš©í•˜ì§€ ì•ŠìŒ
+		hs.add("í™ê¸¸ë™");
+		System.out.println(hs.remove("í™ê¸¸ë™"));
 		System.out.println("hs : " +hs);
 		
-		hs.add("È«±æµ¿");
-		// bof = ½ÃÀÛÁ¡, eof = ÀÌÈÄ¿¡´Â µ¥ÀÌÅÍ°¡ ¾øÀ½À» ¾Ë·ÁÁÜ
-		//it =[bof,'È«±æµ¿','È«±æµ¿',eof]
+		hs.add("í™ê¸¸ë™");
+		// bof = ì‹œì‘ì , eof = ì´í›„ì—ëŠ” ë°ì´í„°ê°€ ì—†ìŒì„ ì•Œë ¤ì¤Œ
+		//it =[bof,'í™ê¸¸ë™','í™ê¸¸ë™',eof]
 		//		it 
 		//			 it
 		//					 it
@@ -33,18 +33,18 @@ public class Ex01 {
 			System.out.println(it.next());
 		}
 		/*
-		System.out.println(it.hasNext()); //itÁöÁ¡ ´ÙÀ½¿¡ °ªÀÌ ÀÖ´Â°¡ Áú¹®ÇÑµÚ Âü °ÅÁşÀ¸·Î Ç¥Çö
-		System.out.println(it.next());	  //it ´ÙÀ½ °ª Ãâ·Â
+		System.out.println(it.hasNext()); //itì§€ì  ë‹¤ìŒì— ê°’ì´ ìˆëŠ”ê°€ ì§ˆë¬¸í•œë’¤ ì°¸ ê±°ì§“ìœ¼ë¡œ í‘œí˜„
+		System.out.println(it.next());	  //it ë‹¤ìŒ ê°’ ì¶œë ¥
 		
 		System.out.println(it.hasNext()); 
 		System.out.println(it.next());
 		
-		System.out.println(it.hasNext()); //´ÙÀ½°ªÀÌ ¾øÀ½À¸·Î false
+		System.out.println(it.hasNext()); //ë‹¤ìŒê°’ì´ ì—†ìŒìœ¼ë¡œ false
 		*/
 		it = hs.iterator();
 		while(it.hasNext()) {
 			Object s = it.next();
-			String st = (String)s; //Çüº¯È¯
+			String st = (String)s; //í˜•ë³€í™˜
 			System.out.println(s);
 			
 		}	

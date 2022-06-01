@@ -1,8 +1,8 @@
 package day09;
 
 public class TestClass01 {
-// Å¬·¡½º ¾È¿¡¼­ ¸¸µé¾îÁø ±â´ÉÀº ¸Ş¼Òµå(°´Ã¼)
-// ±×·¸Áö ¾ÊÀº ±â´ÉÀ» ÇÔ¼öÇü(function)
+// í´ë˜ìŠ¤ ì•ˆì—ì„œ ë§Œë“¤ì–´ì§„ ê¸°ëŠ¥ì€ ë©”ì†Œë“œ(ê°ì²´)
+// ê·¸ë ‡ì§€ ì•Šì€ ê¸°ëŠ¥ì„ í•¨ìˆ˜í˜•(function)
 		public String name;
 		String addr;
 		int age;

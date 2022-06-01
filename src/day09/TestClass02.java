@@ -1,17 +1,17 @@
 package day09;
 
 public class TestClass02 {
-	// Á¢±ÙÁ¦ÇÑÀÚ ¹İÈ¯Å¸ÀÔ ¸Ş¼Òµå ¸í(¸Å°³º¯¼ö(argument))
+	// ì ‘ê·¼ì œí•œì ë°˜í™˜íƒ€ì… ë©”ì†Œë“œ ëª…(ë§¤ê°œë³€ìˆ˜(argument))
 		public  void   	test   (   ) {
 		test2();
-			System.out.println("test ¸Ş¼Òµå ½ÇÇà");
+			System.out.println("test ë©”ì†Œë“œ ì‹¤í–‰");
 	}
 		public  void   	test1   (   ) {
-			System.out.println("test1 ¸Ş¼Òµå ½ÇÇà");
+			System.out.println("test1 ë©”ì†Œë“œ ì‹¤í–‰");
 		}
 		public  void   	test2   (   ) {
 			test1();
-			System.out.println("test2 ¸Ş¼Òµå ½ÇÇà");
+			System.out.println("test2 ë©”ì†Œë“œ ì‹¤í–‰");
 		}
 		
 }

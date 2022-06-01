@@ -13,20 +13,20 @@ public class QuizEx01 {
 	    String price = null;
 	    int num=0;
 	    while(true) {
-	        System.out.println("1.¸Ş´º µî·Ï");
-	    	System.out.println("2.¸Ş´ºº° °¡°İ º¸±â");		System.out.println("3.Á¾ ·á");
+	        System.out.println("1.ë©”ë‰´ ë“±ë¡");
+	    	System.out.println("2.ë©”ë‰´ë³„ ê°€ê²© ë³´ê¸°");		System.out.println("3.ì¢… ë£Œ");
 	        System.out.print(">>> ");
 		num = input.nextInt();
 		if(num == 1) {
-	            System.out.print("¸Ş´º ÀÔ·Â : ");
+	            System.out.print("ë©”ë‰´ ì…ë ¥ : ");
 	            name = input.next();
 		    if(map.containsKey(name)==false) {
-	                System.out.print("°¡°İ ÀÔ·Â : ");
+	                System.out.print("ê°€ê²© ì…ë ¥ : ");
 			price = input.next();
 			map.put(name, price);
-			System.out.println("µî·Ï µÇ¾ú½À´Ï´Ù.");
+			System.out.println("ë“±ë¡ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		    }else {
-			System.out.println("Á¸ÀçÇÏ´Â ¸Ş´º ÀÔ´Ï´Ù");
+			System.out.println("ì¡´ì¬í•˜ëŠ” ë©”ë‰´ ì…ë‹ˆë‹¤");
 		    }
 		}
 		else if(num == 2) {
@@ -35,29 +35,29 @@ public class QuizEx01 {
 	                name = (String)it.next();
 			System.out.println(name+" : "+map.get(name));
 		    }
-		    System.out.println("1.¼öÁ¤ 2.»èÁ¦ 3.³ª°¡±â");
+		    System.out.println("1.ìˆ˜ì • 2.ì‚­ì œ 3.ë‚˜ê°€ê¸°");
 		    System.out.print(">>> ");
 		    int choise = input.nextInt();
 		    if(choise == 1) {
-			System.out.print("º¯°æ ¸Ş´ºÀÌ¸§ ÀÔ·Â : ");
+			System.out.print("ë³€ê²½ ë©”ë‰´ì´ë¦„ ì…ë ¥ : ");
 			name = input.next();
 			if(map.containsKey(name)) {
-			    System.out.print("¼öÁ¤ °¡°İ ÀÔ·Â : ");
+			    System.out.print("ìˆ˜ì • ê°€ê²© ì…ë ¥ : ");
 			    String newPrice = input.next();
 			    System.out.println(map.get(name)+"->"+newPrice);
-			    System.out.println("º¯°æ µÆ½À´Ï´Ù.!!!");
+			    System.out.println("ë³€ê²½ ëìŠµë‹ˆë‹¤.!!!");
 			    map.replace(name, newPrice);
 			}else {
-			    System.out.println("¸Ş´º°¡ ¾ø½À´Ï´Ù!!!");
+			    System.out.println("ë©”ë‰´ê°€ ì—†ìŠµë‹ˆë‹¤!!!");
 			}
 		    }
 		    else if(choise == 2) {
-			System.out.print("»èÁ¦ÇÒ ÀÌ¸§ ÀÔ·Â");
+			System.out.print("ì‚­ì œí•  ì´ë¦„ ì…ë ¥");
 			name = input.next();
 			if(map.containsKey(name)) {
 			    map.remove(name);
-			    System.out.println(name+" »èÁ¦ µÆ½À´Ï´Ù");
-			}else {System.out.println(name+"¾ø´Â ÀÌ¸§ÀÔ´Ï´Ù");}
+			    System.out.println(name+" ì‚­ì œ ëìŠµë‹ˆë‹¤");
+			}else {System.out.println(name+"ì—†ëŠ” ì´ë¦„ì…ë‹ˆë‹¤");}
 		    }
 		}
 		else break;

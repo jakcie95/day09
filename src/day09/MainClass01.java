@@ -1,10 +1,10 @@
 package day09;
 /*
- Á¢±Ù Á¦ÇÑÀÚ
- - public : Å¬·¡½º ³»ºÎ, ¿ÜºÎ¿¡¼­ Á¢±Ù °¡´É
- - private : Å¬·¡½º ³»ºÎ¿¡¼­¸¸ Á¢±Ù °¡´É
- - protected : »ó¼Ó¹ŞÀº ÀÚ½Ä ¶Ç´Â ³»ºÎ¿¡¼­ Á¢±Ù °¡´É
- - default : °°Àº ÆĞÅ°Áö ¾È¿¡¼­ Á¢±Ù °¡´É
+ ì ‘ê·¼ ì œí•œì
+ - public : í´ë˜ìŠ¤ ë‚´ë¶€, ì™¸ë¶€ì—ì„œ ì ‘ê·¼ ê°€ëŠ¥
+ - private : í´ë˜ìŠ¤ ë‚´ë¶€ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥
+ - protected : ìƒì†ë°›ì€ ìì‹ ë˜ëŠ” ë‚´ë¶€ì—ì„œ ì ‘ê·¼ ê°€ëŠ¥
+ - default : ê°™ì€ íŒ¨í‚¤ì§€ ì•ˆì—ì„œ ì ‘ê·¼ ê°€ëŠ¥
  */
 import test.Member;
 
@@ -12,13 +12,13 @@ public class MainClass01 {
 
 	public static void main(String[] args) {
 		Member m = new Member();
-		m.name = "È«±æµ¿";
+		m.name = "í™ê¸¸ë™";
 		
 		
 		TestClass01 t = new TestClass01();
-		//t ´Â TestClass01ÀÇ ¸ğµç ÀÚ·á¸¦ »ó¼Ó¹ŞÀ½
-		//t. TestClassÀÇ ¸â¹öµéÀ» ÀÌ¿ë
-		t.name ="È«±æµ¿";
+		//t ëŠ” TestClass01ì˜ ëª¨ë“  ìë£Œë¥¼ ìƒì†ë°›ìŒ
+		//t. TestClassì˜ ë©¤ë²„ë“¤ì„ ì´ìš©
+		t.name ="í™ê¸¸ë™";
 		t.age = 20;
 		System.out.println(t.name+t.age);
 

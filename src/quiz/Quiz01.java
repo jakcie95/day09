@@ -9,24 +9,24 @@ public class Quiz01 {
 	public static void main(String[] args) {
 		int a, b;
 		HashMap map = new HashMap();
-		map.put("±è¹ä","1500");
-		map.put("¶ó¸é", "1000");
+		map.put("ê¹€ë°¥","1500");
+		map.put("ë¼ë©´", "1000");
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-		System.out.println("1.¸Ş´º µî·Ï");
-		System.out.println("2.¸Ş´ºº° °¡°İ º¸±â");
-		System.out.println("3. Á¾·á");
+		System.out.println("1.ë©”ë‰´ ë“±ë¡");
+		System.out.println("2.ë©”ë‰´ë³„ ê°€ê²© ë³´ê¸°");
+		System.out.println("3. ì¢…ë£Œ");
 		a = sc.nextInt();
 		if(a == 1) {
-			System.out.println("¸Ş´º ÀÔ·Â");
-			System.out.println("°¡°İ ÀÔ·Â");
+			System.out.println("ë©”ë‰´ ì…ë ¥");
+			System.out.println("ê°€ê²© ì…ë ¥");
 			String menu = sc.next();
 			String price = sc.next();
 			if(map.get(menu) == null) {
 				map.put(menu, price);
 				System.out.println(map);
 			}else {
-				System.out.println("Á¸ÀçÇÏ´Â ¸Ş´ºÀÔ´Ï´Ù");
+				System.out.println("ì¡´ì¬í•˜ëŠ” ë©”ë‰´ì…ë‹ˆë‹¤");
 			}
 		}else if(a == 2) {
 			Iterator it = map.keySet().iterator();
@@ -34,7 +34,7 @@ public class Quiz01 {
 			String menu = (String)it.next();
 			System.out.println(menu+" : "+map.get(menu));
 			}
-			System.out.println("1.¼öÁ¤\t2.»èÁ¦\t3.³ª°¡±â");
+			System.out.println("1.ìˆ˜ì •\t2.ì‚­ì œ\t3.ë‚˜ê°€ê¸°");
 			b =sc.nextInt();
 			if(b == 1) {
 				
@@ -45,7 +45,7 @@ public class Quiz01 {
 			}
 				
 		}else {
-			System.out.println("½Ã½ºÅÛ Á¾·á");
+			System.out.println("ì‹œìŠ¤í…œ ì¢…ë£Œ");
 			System.exit(0);
 		}
 		sc.close();
